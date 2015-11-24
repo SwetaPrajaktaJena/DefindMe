@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RgistrationViewController">
+            <connections>
+                <outlet property="cancelButton" destination="YOF-MB-uTr" id="M9j-fw-ZCu"/>
+                <outlet property="datePicker" destination="1CZ-ed-Ftj" id="Ffw-dz-pWj"/>
+                <outlet property="datepickerView" destination="ZPf-mm-g05" id="yZv-JQ-2Ks"/>
+                <outlet property="dobTextFld" destination="HyJ-dp-5BT" id="ed7-px-Zda"/>
+                <outlet property="doneButton" destination="n3N-lB-uvZ" id="68I-Un-iHU"/>
+                <outlet property="firstnameTextFld" destination="HO4-aB-DbF" id="YFd-dV-JB5"/>
+                <outlet property="lastnameTextFld" destination="saq-rY-dQh" id="LRf-VC-MAW"/>
+                <outlet property="leftArrowButton" destination="z2C-qD-e5P" id="kwh-CL-J6T"/>
+                <outlet property="locationTextFld" destination="p63-1X-E1m" id="Gcq-Vw-OfQ"/>
+                <outlet property="rightArrowButton" destination="hPi-Jp-EhG" id="ONc-ZN-cfh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Your profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lM7-EJ-908">
+                    <rect key="frame" x="89" y="34" width="149" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPi-Jp-EhG">
+                    <rect key="frame" x="267" y="30" width="37" height="27"/>
+                    <state key="normal" backgroundImage="right-arrow">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rightArrowButtonTapped:" destination="-1" eventType="touchUpInside" id="Ays-WT-FVt"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  First" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HO4-aB-DbF">
+                    <rect key="frame" x="8" y="107" width="304" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="LJI-Ul-JGL"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Location" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p63-1X-E1m">
+                    <rect key="frame" x="8" y="200" width="311" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="JLY-1c-6ze"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Date of Birth" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HyJ-dp-5BT">
+                    <rect key="frame" x="8" y="252" width="311" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="LV0-bS-xWy"/>
+                    </connections>
+                </textField>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9rT-iO-xfq">
+                    <rect key="frame" x="-1" y="145" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uxb-ft-8mF">
+                    <rect key="frame" x="0.0" y="191" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SnW-A9-8yP">
+                    <rect key="frame" x="-1" y="239" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOb-Ix-BeQ">
+                    <rect key="frame" x="0.0" y="289" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2C-qD-e5P">
+                    <rect key="frame" x="7" y="30" width="37" height="27"/>
+                    <state key="normal" backgroundImage="left-arrow">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="leftArrowButtonTapped:" destination="-1" eventType="touchUpInside" id="GMi-fl-IDb"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Last (private)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saq-rY-dQh">
+                    <rect key="frame" x="8" y="154" width="311" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="JEn-hw-B9N"/>
+                    </connections>
+                </textField>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPf-mm-g05">
+                    <rect key="frame" x="0.0" y="289" width="319" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOF-MB-uTr">
+                            <rect key="frame" x="0.0" y="4" width="66" height="30"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="CancelButtonTapped:" destination="-1" eventType="touchUpInside" id="iEX-aO-TwL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3N-lB-uvZ">
+                            <rect key="frame" x="265" y="4" width="46" height="30"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="DoneButtonTapped:" destination="-1" eventType="touchUpInside" id="G3c-cG-0XK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="1CZ-ed-Ftj">
+                    <rect key="frame" x="0.0" y="325" width="320" height="162"/>
+                    <date key="date" timeIntervalSinceReferenceDate="462259195.12856299">
+                        <!--1937-06-04 05:19:55 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="333" y="347"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left-arrow" width="69" height="55"/>
+        <image name="right-arrow" width="69" height="55"/>
+    </resources>
+</document>
